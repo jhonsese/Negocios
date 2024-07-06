@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
+    <video id="video-background" autoplay muted loop>
+        <source src="assets/movie/fondo2.mp4" type="video/mp4">
+      
+    </video>
     <header>
         <nav>
             <ul>
                 <li><a href="#intro">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="#conocenos">Conocenos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="intro">
-            <h1>Empresa XYZ</h1>
-            <p>Descripción de la empresa</p>
+        <section id="intro" class="index">
+            <h1  data-aos="fade-down-right">Negocios Internacionales</h1>
+            <span  data-aos="fade-down-right">En proceso ...</span>
+            <!-- <p>Descripción de la empresa</p>
         </section>
         <section id="about">
             <h1>Acerca de nosotros</h1>
@@ -42,11 +49,43 @@
                 <label for="message">Mensaje:</label>
                 <textarea id="message" name="message"></textarea><br><br>
                 <input type="submit" value="Enviar">
-            </form>
+            </form> -->
         </section>
+
+        
     </main>
+
+<section class="index2" id="conocenos">
+    <div class="container">
+        <section id="conocenos" >
+            <h1 class="title" data-aos="zoom-in-up">helping businesses<br>succeed trough the<br>power of video!</h1>
+            <p class="text" data-aos="zoom-in-up">Lorem ipsum dolor sit amet pandevono remix productions,<br> consectetur adipiscing elit. Sed sit amet nulla auctor,<br> vestibulum magna sed, convallis ex por eso yo me alejo.</p>
+            <button class="more" data-aos="zoom-in-up">Learn More</button>
+        </section>
+        <section class="img" data-aos="zoom-in-down">
+            <img class="imagen" src="imgs/frasesemprendedoresdrucker.png" alt="#">
+        </section>
+    </div>
+    <section class="feature" data-aos="zoom-in-up">
+        <h2>Our Features</h2>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+        </ul>
+    </section>
+
+
+
+</section>
+
     <footer>
         <p>&copy; 2024 Empresa XYZ</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
