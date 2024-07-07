@@ -34,11 +34,41 @@ body {
 }
 
 header {
-    background-color: #c0c0c02a;
+    position: relative;
     color: #f8f8f8;
     padding: 1em;
     text-align: center;
+    display: flex;
   
+}
+
+.header {
+    margin-top: 3px; /* Espacio en la parte superior */
+    margin-left: 15px; /* Espacio en la izquierda */
+    margin-right: 25px; /* Espacio en la derecha */
+    margin-bottom: 15px; /* Espacio en la parte inferior */
+    font-size: 1.2rem;
+  }
+
+.sesion { /*si lee esto la idea es poner mas iconos, como un shearch o cosas asi pana, ahi que ir viendo */
+    position: relative;
+    margin-left: 1050px;
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+}
+
+.pointer-overlay {
+    /* Posicionamos el overlay div absolutamente sobre el icono */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Hacemos que el overlay div sea transparente */
+    background-color: transparent;
+    /* Aplicamos el cursor pointer */
+    cursor: pointer;
 }
 
 .title {
