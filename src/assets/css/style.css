@@ -47,24 +47,52 @@ header {
 
 .header {
     margin-top: 3px;
-    /* Espacio en la parte superior */
     margin-left: 15px;
-    /* Espacio en la izquierda */
     margin-right: 25px;
-    /* Espacio en la derecha */
     margin-bottom: 15px;
-    /* Espacio en la parte inferior */
     font-size: 1.2rem;
+    position: relative; /* Asegura que el posicionamiento sea relativo */
+    display: inline-block; /* Para que la línea se ajuste al texto */
+    color: black; /* Color del texto */
+    text-decoration: none; /* Quita la decoración de texto por defecto */
+}
+  
+.header::after {
+    content: ''; /* Contenido vacío para crear la línea */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Posiciona la línea debajo del texto */
+    width: 100%;
+    height: 1px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+    transition: width 0.3s ease, opacity 0.3s ease; /* Transición suave para la anchura y la opacidad */
+    opacity: 0; /* Inicialmente la línea no es visible */
+}
+  
+.header:hover::after {
+    width: 100%; /* Anchura de la línea al hacer hover */
+    opacity: 1; /* Hace visible la línea al hacer hover */
+}
+  
+.pointer {
+    width: 35px;
+    background-color: transparent;
+    position: absolute;
+    left: 1380px; /* Ajusta la posición según necesites */
+    z-index: 1; /* Asegura que esté por encima de .sesion */
+    cursor: pointer;
+}
+
+.pointer:hover{
+    opacity: 0.5;
 }
 
 .sesion {
-    /*si lee esto la idea es poner mas iconos, como un shearch o cosas asi pana, ahi que ir viendo */
-    /* Bueno caravanota */
     position: relative;
-    margin-left: 1050px;
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     filter: invert(100%);
+    z-index: -1;
 }
 
 .pointer-overlay {
@@ -78,6 +106,7 @@ header {
     background-color: transparent;
     /* Aplicamos el cursor pointer */
     cursor: pointer;
+    z-index: -1;
 }
 
 .title {
