@@ -20,7 +20,7 @@ body {
     line-height: 1.6;
     color: #ffffff;
     /* background-color: #ffffff; */
-    height: 140vh;
+    height: 145vh;
     /* overflow: hidden; */
 }
 
@@ -113,7 +113,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 2em;
-    height: 80%;
+    height: 50%;
     justify-content: center;
 }
 
@@ -146,6 +146,7 @@ main {
     /* Display flex para que los elementos se alineen horizontalmente */
     flex-wrap: wrap;
     /* Permitir que los elementos se envuelvan */
+    margin-bottom: 90px;
 }
 
 #conocenos {
