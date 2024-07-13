@@ -1,6 +1,4 @@
-/*parte conocenos*/
-
-/* styles.css */
+/* Definir Tipografia */
 
 * {
     box-sizing: border-box;
@@ -16,343 +14,65 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-    /* background-color: #ffffff; */
-    height: 145vh;
-    /* overflow: hidden; */
-}
 
-#video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    /* Coloca el video detrás de otros contenidos */
-    object-fit: cover;
-    /* Ajusta el tamaño del video para cubrir toda la pantalla */
-}
 
-header {
-    position: relative;
-    color: #f8f8f8;
-    padding: 1em;
-    text-align: center;
-    display: flex;
 
 }
 
-.header {
-    margin-top: 3px;
-    margin-left: 15px;
-    margin-right: 25px;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    position: relative; /* Asegura que el posicionamiento sea relativo */
-    display: inline-block; /* Para que la línea se ajuste al texto */
-    color: black; /* Color del texto */
-    text-decoration: none; /* Quita la decoración de texto por defecto */
-}
-  
-.header::after {
-    content: ''; /* Contenido vacío para crear la línea */
-    position: absolute;
-    left: 0;
-    bottom: -2px; /* Posiciona la línea debajo del texto */
-    width: 100%;
-    height: 1px; /* Grosor de la línea */
-    background-color: white; /* Color de la línea */
-    transition: width 0.3s ease, opacity 0.3s ease; /* Transición suave para la anchura y la opacidad */
-    opacity: 0; /* Inicialmente la línea no es visible */
-}
-  
-.header:hover::after {
-    width: 100%; /* Anchura de la línea al hacer hover */
-    opacity: 1; /* Hace visible la línea al hacer hover */
-}
-  
-.pointer {
-    width: 35px;
-    background-color: transparent;
-    position: absolute;
-    left: 1380px; /* Ajusta la posición según necesites */
-    z-index: 1; /* Asegura que esté por encima de .sesion */
-    cursor: pointer;
-}
 
-.pointer:hover{
-    opacity: 0.5;
-}
 
-.sesion {
-    position: relative;
-    height: 35px;
-    width: 35px;
-    filter: invert(100%);
-    z-index: -1;
-}
+:root {
 
-.pointer-overlay {
-    /* Posicionamos el overlay div absolutamente sobre el icono */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* Hacemos que el overlay div sea transparente */
-    background-color: transparent;
-    /* Aplicamos el cursor pointer */
-    cursor: pointer;
-    z-index: -1;
-}
+    /* Definir Paleta de Colores */
 
-.title {
-    margin-top: 20px;
-    color: #ffffff;
-    font-size: 3rem;
-}
+    --primary--color: rgb(0, 76, 79);
+    --secundary--color: rgb(4, 0, 255);
+    --terciary--color:white;
 
-.text {
-    margin-top: 8px;
-    margin-bottom: 5px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-    height: 50%;
-    justify-content: center;
-}
 
-.index {
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-.index2 {
 
     width: 100%;
-    height: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    height: 300vh;
+    
 }
 
+main .home {
 
-.index2 .feature {
-
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secundary--color);
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
 }
 
-.container {
-    position: relative;
-    /* Posición relativa */
-    display: flex;
-    /* Display flex para que los elementos se alineen horizontalmente */
-    flex-wrap: wrap;
-    /* Permitir que los elementos se envuelvan */
-    margin-bottom: 90px;
-}
+main .about {
 
-#conocenos {
-    padding: 3em;
-    margin-right: 600px;
-    background: transparent;
-}
-
-.img {
-    position: absolute;
-    /* Posición absoluta */
-    top: 0;
-    /* Arriba */
-    right: 0;
-    /* Derecha */
-    width: 50%;
-    /* Ancho del 40% */
-    height: 80%;
-    /* Alto del 100% */
-}
-
-.imagen {
-    margin-top: 50px;
-    margin-right: 80px;
-    margin-left: auto;
-    filter: invert(100%);
-}
-
-.more {
-    background-color: #333;
-    /* Color de fondo */
-    margin-top: 8px;
-    color: #ffffff;
-    /* Color de texto */
-    border: none;
-    /* Sin bordes */
-    padding: 15px 30px;
-    /* Espacio entre el texto y el borde */
-    font-size: 18px;
-    /* Tamaño de fuente */
-    font-weight: bold;
-    /* Fuente en negrita */
-    cursor: pointer;
-    /* Cursor en forma de mano */
-    transition: all 0.3s ease-in-out;
-    /* Transición suave */
-    position: relative;
-    /* Posición relativa */
-    overflow: hidden;
-    /* Ocultar contenido sobrante */
-}
-
-.more::before {
-    content: "";
-    /* Contenido vacío */
-    position: absolute;
-    /* Posición absoluta */
-    top: 0;
-    /* Arriba */
-    left: 0;
-    /* Izquierda */
     width: 100%;
-    /* Ancho del 100% */
-    height: 100%;
-    /* Alto del 100% */
-    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
-    /* Color de fondo */
-    color: #333;
-    transform: scaleX(0);
-    /* Escalar en X a 0 */
-    transition: transform 0.3s ease-in-out;
-    /* Transición suave */
+    height: 100vh;
+    background-color: var(--primary--color);
     display: flex;
-    /* Agregar display flex */
     justify-content: center;
-    /* Centrar horizontalmente */
     align-items: center;
-    /* Centrar verticalmente */
-    font-size: 18px;
-    /* Tamaño de fuente */
-    font-weight: bold;
-    /* Fuente en negrita */
 }
 
-.more:hover::before {
-    transform: scaleX(1);
-    /* Escalar en X a 1 */
-}
+main .contact {
 
-.more:hover {
-    background-color: #333;
-    /* Color de fondo al pasar el mouse */
-    color: #ffffff;
-    /* Color de texto al pasar el mouse */
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    clear: both;
-}
-
-main .index h1 {
-
-    font-size: 100px;
-    display: flex;
-}
-
-/*parte algunas de nuestras empresas */
-/*... */
-
-.projects-section {
-    background-color: #f7f7f7;
-    padding: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    /* Agregué este margen inferior */
-}
-
-.projects-section.title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.project {
-    margin: 20px;
-    width: 250px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    color: black;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.7s ease;
-    cursor: pointer;
-}
-
-.project :hover {
-
-    transition: transform 0.5s ease;
-    opacity: 1;
-    transform: scale(1.1);
-    z-index: 1;
-}
-
-.project:not(:hover) {
-
-
-    opacity: 0.6;
-}
-
-.project img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    height: 100vh;
+    background-color: var(--secundary--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.project h3 {
-    font-size: 18px;
-    margin-top: 10px;
+/* Textos */
+
+h1{
+
+    color:var(--terciary--color) ;
+    font-size: 50px;
 }
-
-.project p {
-    font-size: 14px;
-    color: #666;
-}
-
-
-
-/*... */
