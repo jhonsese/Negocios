@@ -32,8 +32,14 @@ body {
     --terciary--color:#939395;
     --four--color:#CC3333;
 
+    --balck--color:#000000;
+
 }
 
+header i{
+
+    color: var(--secundary--color);
+}
 
 
 header .info-redes{
@@ -41,13 +47,20 @@ header .info-redes{
 
     display: flex;
     justify-content: space-between;
+    background-color: var(--balck--color);
+   padding: 10px;
 }
 
+a{
+    text-decoration: none;
+}
 
 header .logo{
 
-
-font-size: 24px;
+color:var(--secundary--color) ;
+  
+font-weight: 700;
+font-size: 20px;
 }
 
 
@@ -55,6 +68,7 @@ header .info-redes .redes-sociales{
 
 list-style: none;
     display: flex;
+    gap: 10px;
 }
 
 main {
