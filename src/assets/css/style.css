@@ -1,5 +1,6 @@
 /* Definir Tipografia */
-
+@import url('https://fonts.cdnfonts.com/css/simplifica');
+@import url('https://fonts.cdnfonts.com/css/martian-mono');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,8 +16,9 @@ html {
 
 body {
 
-
-
+    font-family: 'Simplifica', sans-serif;
+   
+                                                
 }
 
 
@@ -25,10 +27,34 @@ body {
 
     /* Definir Paleta de Colores */
 
-    --primary--color: rgb(0, 76, 79);
-    --secundary--color: rgb(4, 0, 255);
-    --terciary--color:white;
+    --primary--color: #0F0F10;
+    --secundary--color: #E6E6E6;
+    --terciary--color:#939395;
+    --four--color:#CC3333;
 
+}
+
+
+
+header .info-redes{
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header .logo{
+
+
+font-size: 24px;
+}
+
+
+header .info-redes .redes-sociales{
+
+list-style: none;
+    display: flex;
 }
 
 main {
@@ -43,17 +69,18 @@ main .home {
 
     width: 100%;
     height: 100vh;
-    background-color: var(--secundary--color);
+    background-color: var(--primary--color);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 main .about {
 
     width: 100%;
     height: 100vh;
-    background-color: var(--primary--color);
+    background-color: var(--terciary--color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +90,7 @@ main .contact {
 
     width: 100%;
     height: 100vh;
-    background-color: var(--secundary--color);
+    background-color: var(--primary--color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +100,17 @@ main .contact {
 
 h1{
 
-    color:var(--terciary--color) ;
-    font-size: 50px;
+    color:var(--secundary--color) ;
+  
+    font-weight: 700;
+    font-size: 100px;
+}
+
+
+p{
+    font-family: 'Martian Mono', sans-serif;
+                                                                                   
+         color: var(--secundary--color);                                       
+font-size: 20px;
+
 }
