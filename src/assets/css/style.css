@@ -79,16 +79,75 @@ main {
     
 }
 
+/* Seccion del Home */
 main .home {
 
     width: 100%;
     height: 100vh;
     background-color: var(--primary--color);
     display: flex;
-    justify-content: center;
+   justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    padding: 50px;
 }
+
+main .contenido-principal{
+
+
+    width: 50%;
+}
+
+main .contenido-principal .botones-home{
+    margin-top: 10px;
+width: 100%;
+display: flex;
+justify-content: flex-start;
+gap: 20px;
+}
+
+
+main .contenido-principal .botones-home button{
+
+
+height: 40px;
+width: 120px;
+background-color: var(--balck--color);
+color: var(--secundary--color);
+border: 2px solid var(--secundary--color);
+font-family: 'Martian Mono', sans-serif;
+cursor: pointer;
+}
+
+main .contenido-principal .botones-home .button-c{
+    background-color: var(--secundary--color);
+    color: var(--primary--color);
+    border: 2px solid var(--balck--color);
+    font-family: 'Martian Mono', sans-serif;
+
+
+    }
+
+
+
+
+
+main .home .img-home{
+
+height: 100%;
+width: 40%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--balck--color);
+
+}
+
+main .home img{
+
+    height: 90%;
+    width: 90%;
+    
+    }
 
 main .about {
 
