@@ -1,3 +1,4 @@
+// APARECER OBJETOS DEL ABOUT CON TRANSICION
 window.addEventListener('scroll', function() {
     const aboutSection = document.querySelector('.about');
     const aboutTop = aboutSection.offsetTop;
@@ -11,6 +12,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// AGREGAMOS CLASE AL HACER ESCROLL
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {

@@ -315,6 +315,7 @@ main .about .about-content {
     }
 }
 
+/* BAJAR EL HEADER JUNTO CON EL USUARIO AL AHACER SCROLL*/
 .sticky {
     position: fixed;
     top: 0;
@@ -323,4 +324,4 @@ main .about .about-content {
     background-color: #fff; /* o cualquier otro color que desees */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* para que se mantenga encima de otros elementos */
-  }
+}
