@@ -37,6 +37,11 @@ body {
 
 }
 
+header{
+
+
+    position: sticky;
+}
 header i {
 
     color: var(--secundary--color);
