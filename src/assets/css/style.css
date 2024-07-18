@@ -37,11 +37,6 @@ body {
 
 }
 
-header{
-
-
-    position: sticky;
-}
 header i {
 
     color: var(--secundary--color);
@@ -203,6 +198,10 @@ main .contenido-principal .botones-home button:hover {
 }
 
 
+
+
+
+
 main .home .img-home {
 
     height: 100%;
@@ -219,6 +218,16 @@ main .home img {
     height: 90%;
     width: 90%;
 
+}
+
+main .about {
+
+    width: 100%;
+    height: 100vh;
+    background-color: var(--terciary--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main .contact {
@@ -251,82 +260,3 @@ p {
 }
 
 /* SECTION ABOUT */
-main .about {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--terciary--color); /* Mantenemos el fondo gris claro */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden; /* Agregamos overflow hidden para que el contenido no se desborde */
-}
-  
-main .about .about-image {
-    width: 40%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-    transform: translateX(-100%); /* La imagen se desplaza hacia la izquierda fuera de la pantalla */
-    transition: transform 0.5s; /* Agregamos una transición para la animación */
-    border: 1px solid var(--primary--color); /* Agregamos un borde de 1px de grosor y color gris claro */
-    border-radius: 10px; /* Agregamos un radio de borde de 10px para darle un efecto de curva */
-    
-}
-  
-main .about .about-image img {
-    height: 90%;
-    width: 90%;
-}
-  
-main .about .about-content {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    transform: translateX(100%); /* El texto se desplaza hacia la derecha fuera de la pantalla */
-    transition: transform 0.5s; /* Agregamos una transición para la animación */
-}
-  
-.about_title {
-    text-align: center;
-    font-size: 50px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    color: var(--secundary--color);
-}
-  
-.p_about{
-    font-size: 22px;
-    margin-bottom: 40px;
-    color: var(--primary--color);
-}
-
-  /* Efecto de aparición al hacer scroll */
-.about {
-    opacity: 1; /* Mantenemos la opacidad en 1 para que no desaparezca el fondo */
-}
-  
-.about.active {
-    .about-image {
-      transform: translateX(0); /* La imagen se desplaza hacia la derecha y aparece */
-    }
-    .about-content {
-      transform: translateX(0); /* El texto se desplaza hacia la izquierda y aparece */
-    }
-}
-
-/* BAJAR EL HEADER JUNTO CON EL USUARIO AL AHACER SCROLL*/
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff; /* o cualquier otro color que desees */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* para que se mantenga encima de otros elementos */
-}
